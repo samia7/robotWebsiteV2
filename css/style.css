@@ -1,0 +1,171 @@
+/*  SECTIONS  */
+body { padding-top: 50px; }
+
+.grey{
+	background-color: #f0efef;
+	padding: 50px;
+}
+
+.white{
+	padding: 40px;
+}
+
+img {
+    height: 100%;
+    display:block;
+    width:100%;
+}
+
+.ewok{
+	padding:50px;
+}
+
+.mainPhoto{
+	width:100%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	color: #696969;
+}
+
+@media screen and (min-width: 701px) {
+ h2 {
+      font-size: 50px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 700px) {
+  h2 {
+    	font-size: 35px;
+  }
+}
+
+.navbar-default{
+background : #2c3e50;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: white;
+}
+
+.navbar-default .navbar-brand{
+	color:white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #E0E0E0;
+}
+
+p{
+	font-family: Calibri, sans-serif;
+	color:#606060;
+}
+
+.textCenter {	
+	text-align: center;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 701px) {
+ .textCenter {
+      font-size: 18px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 700px) {
+  .textCenter {
+    	font-size: 16px;
+  }
+}
+
+.comsurface{
+	width:40%;
+	   margin-left: auto;
+    margin-right: auto;
+
+}
+
+.video{
+	position:relative;
+	width:100%;
+	height: 0%;
+	padding-bottom: 40%;
+	padding-top:10%;
+}
+
+.video iframe{
+	position:absolute;
+	width:100%;
+	height: 100%;
+}
+
+.topPadding{
+	padding-top: 80px;
+}
+
+.topPadding3{
+	padding-top: 120px;
+}
+
+.topPadding2{
+	padding-top: 40px;
+}
+
+h3{
+	color: #707078;
+
+	font-family: Calibri, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 701px) {
+ h3 {
+      font-size: 32px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 700px) {
+  h3 {
+    	font-size: 20px;
+  }
+}
+
+.listFormat{
+		text-align: left;
+
+		font-family: Calibri, sans-serif;
+		color:		#707070;
+		
+		font-weight: 200;
+
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 701px) {
+ .listFormat {
+    	font-size: 18px;
+line-height: 21px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 700px) {
+  .listFormat {
+    	font-size: 15px;
+line-height: 19px;
+  }
+}
+
+.betweenRowPadding{
+	padding-top: 20px;
+}

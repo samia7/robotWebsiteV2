@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Robot Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class='container'>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">LYSANDEROTH</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+					<!-- <ul class="nav navbar-nav">
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				-->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#goal">GOAL</a></li>
+					<li><a href="#mechanical">MECHANICAL</a></li>
+					<li><a href="#electrical">ELECTRICAL</a></li>
+					<li><a href="#">SOFTWARE</a></li>
+					<li><a href="#">IMPROVEMENTS</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div>
+		<img src="images/teamphoto1.jpg" class="mainPhoto">
+	</div>
+
+	<div class="container">
+
+		<div class="white" id=goal>
+
+			<h2>GOAL</h2>
+			<p class="textCenter">Build an autonomous robot that can line follow, detect edges, avoid obstacles, cross gaps, detect and distinguish between infrared frequencies, detect and pick up Ewoks and return them to the safety start position. </p>
+
+
+			<div class="row topPadding2">
+
+				<div class="col-lg-6">
+					<img src="images/compsurface.jpg">
+					<p class="textCenter">A mock-up of the competition surface highlighting some of the biggest obstacles to overcome.</p>
+
+				</div>
+
+
+				<div class="col-lg-6">
+					<img src="images/realsurface.jpg">
+					<p class="textCenter">The competition surface where teams went head to head to pick up and return the maximum number of Ewoks within 2 minutes.</p>
+
+				</div>
+
+			</div>
+
+
+			<div class="row topPadding2">
+
+
+				<div class="col-lg-5" >
+					<img src="images/robot4.jpg" >
+					<p class="textCenter">Lysanderoth: The Autonomous Robot</p>
+				</div>
+				<div class="col-lg-1"></div>
+
+				<div class="col-lg-6 topPadding">
+					<div class="video">
+
+						<iframe src="https://drive.google.com/file/d/1oLLh3AdEuy90pzTMHs-UZsp1TVyPCavk/preview" width="700" height="500"></iframe>
+					</div>
+					<p class="textCenter topPadding topPadding3">Lysanderoth in action; successfully picking up and returning 3 Ewoks under a minute.</p>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+
+
+
+	<div  id="mechanical" class="grey">
+		<div class ="container">
+			<h2>MECHANICAL</h2>
+			<div class= row>
+				<div class="col-xs-9 col-lg-10"></div>
+				<div class="col-xs-3 col-lg-2">
+					<a href="https://bit.ly/2OWYyg3 " target="_blank" ><img src="images/logo3.png"></a>
+				</div>
+			</div>
+
+			<div class="row topPadding2">
+
+
+				<div class="col-lg-5">
+					<img src="images/chassis_nobackground.png">
+
+					<h3>Chassis</h3>
+
+					<p>			  
+						<div class="listFormat">      
+							<ul>
+								<li>After designing a CAD model of our chassis using Solidworks and Onshape we laser cut individual parts and assembled using tab and slot joint method.</li>
+								<li>Our final chassis had
+									<ul>
+										<li>Space on the rear and underside for electrical components</li>
+										<li>Claws mounted on the sides of the chassis</li>
+										<li>A scissor lift/zipline mechanism mounted on the base</li>
+									</ul>
+								</li>
+							</ul>      
+						</div>   
+					</p>
+
+				</div>
+
+				<div class="col-lg-2"></div>
+
+				<div class="col-lg-5">
+					<img src="images/drivetrainNoback.png">
+					<h3>Drive Train</h3>
+					<p>
+						<div class="listFormat">
+							<ul>
+								<li>The drive train was designed to allow for a compact chassis and simple chassis</li>
+								<li>The robot is powered using two geared Barber-Coleman motors with a gear ratio of 3:1</li>
+								<li>Motor mounts were designed using Onshape and 3D printed. This dampened the vibrations and provided a secure hold on the motors.</li>
+							</ul>
+						</div>
+					</p>
+
+				</div>
+
+			</div>
+
+			<div class="row betweenRowPadding">
+
+
+				<div class="col-lg-5">
+					<img src="images/clawNobG.png">
+
+					<h3>Claws</h3>
+					<p>
+						<div class="listFormat">
+
+							<ul>
+								<li>A claw was mounted on both sides of the robot which allowed for decreased uncertainty in retrieving objects.</li>
+								<li>The small size of the claws allows for the robot to fit between the arch way with ease</li>
+								<li>The claw system was designed to cover as wide range of area as possible allowing for consistent results regardless of object placement.</li>
+								<li>The claws arms were curved to maximize contact area with objects</li>
+								<li>A polycarbonate build allowed the claw mechanism to be extremely robust</li>
+							</ul>
+						</div>
+					</p>
+
+				</div>
+
+				<div class="col-lg-2"></div>
+
+				<div class="col-lg-5">
+					<img src="images/plankNoBg.png">
+					<h3>Bridge System</h3>
+					<p>
+						<div class="listFormat">
+							<ul>
+								<li>To cross the gaps the robot used two sheet metal bridges</li>
+								<li>A single servo was used to drop the bridge when an edge is detected</li>
+								<li>The cut outs in the bridges helped ensure one servo can drop both bridges at different times</li>
+								<li>The sides of the bridges were curved to brush against the robot if the robot was a bit disaligned</li>
+							</ul>
+						</div>
+					</p>
+
+				</div>
+
+			</div>
+
+			<div class="row betweenRowPadding">
+
+
+				<div class="col-lg-5">
+					<img src="images/scissor lift.png">
+
+					<h3>Basket Lift</h3>
+					<p>
+						<div class="listFormat">
+							<ul>
+								<li>To return the collected Ewoks back to friendly territory a basket lifting mechanism was utilized in conjunction with the competition surface zipline</li>
+								<li>A scissor lift mounted onto the base of the robot was used to lift the basket and hook onto a metal zipline</li>
+								<li>A Barber-Coleman motor was used with a lead screw to increase and decrease height of the platform</li>
+							</ul>
+						</div>
+					</p>
+
+				</div>
+
+				<div class="col-lg-2"></div>
+
+				<div class="col-lg-5">
+					<img src="images/tilting.jpg">
+					<h3>Tilt Lift</h3>
+					<p>
+						<div class="listFormat">
+							<ul>
+								<li>To return the first 3 Ewoks back to start the robot included a basket tilting mechanism</li>
+								<li>A servo motor tilts the basket filled with Ewoks when limit switches on the rear of the car are pressed.</li>
+								<li>Allows for certainty in position when carrying out the dropping action</li>
+							</ul>
+						</div>
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="white" id="electrical">
+		<div class="container">
+			<h2>Electrical</h2>
+			<h3 class="betweenRowPadding">Infrared Frequency Detection</h3>
+
+			<div class="row betweenRowPadding">
+				<div class="col-lg-12">
+					<img src="images/irSchematic.png">
+					<p class="textCenter">The circuit was used to detect 10kHz and 1kHz frequency, which was processed in the microcontroller</p>
+				</div>
+			</div>
+
+			<div class="row betweenRowPadding">
+				<div class="col-lg-6">
+					<img src = "images/IR_Photo.jpg">
+					<p class="textCenter">Soldered IR Circuit</p>
+				</div>
+				<div class="col-lg-6">
+					<p>
+						<div class="listFormat">
+							<ul>
+								<li>The IR circuit detects and distinguishes between 10kHz signal and 1kHz signal emitted from an IR beacon.</li>
+								<li>The outputs from the circuit is fed into the Analog inputs of the microcontroller. </li>
+								<li>The OpAmps are easily replaceable since we soldered 8 pin sockets onto the PCB.</li>
+								<li>Due to the modular design of the PCB, it was very easy to debug the IR circuit.</li>
+								<li>Using a potentiometer helped us to adjust the gain of the amplifier according to different IR beacons. </li>
+								<li>The IR circuit was one of the most reliable components of our robot.</li>
+							</ul>
+						</div>
+					</p>
+				</div>
+				
+
+			</div>
+
+			<h3 class="betweenRowPadding">H-Bridge</h3>
+
+			<div class="row">
+				<div class="container">
+				<div class="col-lg-12">
+					<img src="images/hbridge schematic.png">
+					<p class="textCenter">H-bridges were used to control the motor direction of the robot.</p>
+				</div>
+			</div>
+			</div>
+
+			<div class="row betweenRowPadding">
+				<div class="col-lg-6">
+					<img src = "images/hbridges.jpg">
+					<p class="textCenter">Two Soldered H-bridge circuits secured under the chassis</p>
+				</div>
+				<div class="col-lg-6">
+					<p>
+						<div class="listFormat">
+														<ul>
+								<li>Although the microcontoller has built in H-bridges, it can supply only limited current; therefore, we used external H-bridges.</li>
+								<li>We supplied a regulated voltage of 15V to the motors from a LiPo battery.</li>
+								<li>The MOSFETs we used for the H-bridge were fully replaceable since we used female header pins on the PCB. This saved us a lot of time since we did not have to remake PCBs.</li>
+								<li>The well-thought-out compact design helped us to fit the H-bridges under the chassis.</li>
+								<li>The H-bridges were secured onto a separate PCB bolted under the Chassiss using male and female header pins. This made the circuits easily removable and easy to debug</li>
+							</ul>
+						</div>
+					</p>
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<script
+	src="http://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
