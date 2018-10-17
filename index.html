@@ -30,16 +30,28 @@
 					<li><a href="#goal">GOAL</a></li>
 					<li><a href="#mechanical">MECHANICAL</a></li>
 					<li><a href="#electrical">ELECTRICAL</a></li>
-					<li><a href="#">SOFTWARE</a></li>
+					<li><a href="#software">SOFTWARE</a></li>
 					<li><a href="#">IMPROVEMENTS</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	
-	<div>
-		<img src="images/teamphoto1.jpg" class="mainPhoto">
-	</div>
+<div class = "jumbotron" > 
+                <div class="container">
+                <div class = "overlay">
+                    <div class = "title">LYSANDEROTH</div>
+                    <div class = "nameRow">
+                        <ul>
+                        <li>Priyansh Malik </li>
+                        <li>Devika Vishwanath</li>
+                        <li> Samia Sama</li>
+                        <li>Shafkat Khondker</li>
+                        </ul>
+                    </div>
+                </div>
+    </div>
+    </div>
 
 	<div class="container">
 
@@ -72,7 +84,6 @@
 
 				<div class="col-lg-5" >
 					<img src="images/robot4.jpg" >
-					<p class="textCenter">Lysanderoth: The Autonomous Robot</p>
 				</div>
 				<div class="col-lg-1"></div>
 
@@ -81,7 +92,20 @@
 
 						<iframe src="https://drive.google.com/file/d/1oLLh3AdEuy90pzTMHs-UZsp1TVyPCavk/preview" width="700" height="500"></iframe>
 					</div>
-					<p class="textCenter topPadding topPadding3">Lysanderoth in action; successfully picking up and returning 3 Ewoks under a minute.</p>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+
+				<div class="col-lg-5" >
+					<p class="textCenter">Lysanderoth: The Autonomous Robot</p>
+				</div>
+				<div class="col-lg-1"></div>
+
+				<div class="col-lg-6">
+					<p class="textCenter">Lysanderoth in action; successfully picking up and returning 3 Ewoks under a minute.</p>
 				</div>
 
 			</div>
@@ -234,9 +258,11 @@
 			<h3 class="betweenRowPadding">Infrared Frequency Detection</h3>
 
 			<div class="row betweenRowPadding">
-				<div class="col-lg-12">
-					<img src="images/irSchematic.png">
-					<p class="textCenter">The circuit was used to detect 10kHz and 1kHz frequency, which was processed in the microcontroller</p>
+				<div class="container">
+					<div class="col-lg-12">
+						<img src="images/irSchematic.png">
+						<p class="textCenter">The circuit was used to detect 10kHz and 1kHz frequency, which was processed in the microcontroller</p>
+					</div>
 				</div>
 			</div>
 
@@ -267,11 +293,11 @@
 
 			<div class="row">
 				<div class="container">
-				<div class="col-lg-12">
-					<img src="images/hbridge schematic.png">
-					<p class="textCenter">H-bridges were used to control the motor direction of the robot.</p>
+					<div class="col-lg-12">
+						<img src="images/hbridge schematic.png">
+						<p class="textCenter">H-bridges were used to control the motor direction of the robot.</p>
+					</div>
 				</div>
-			</div>
 			</div>
 
 			<div class="row betweenRowPadding">
@@ -282,7 +308,7 @@
 				<div class="col-lg-6">
 					<p>
 						<div class="listFormat">
-														<ul>
+							<ul>
 								<li>Although the microcontoller has built in H-bridges, it can supply only limited current; therefore, we used external H-bridges.</li>
 								<li>We supplied a regulated voltage of 15V to the motors from a LiPo battery.</li>
 								<li>The MOSFETs we used for the H-bridge were fully replaceable since we used female header pins on the PCB. This saved us a lot of time since we did not have to remake PCBs.</li>
@@ -295,6 +321,95 @@
 				
 
 			</div>
+
+			<h3 class="betweenRowPadding">Sensors</h3>
+
+			<div class="row">
+				<div class="col-lg-3">
+					<img src="images/DistanceSensor.jpg">
+					<h4> Distance Sensor for Object Detection</h4>
+					<p class="textCenter">Two VL53L0X Time-of-Flight distance sensors were used on either side to accurately detect the Ewoks. Using a state machine we controlled turning on and off the sensors to avoid false detection.</p>
+				</div>
+
+				<div class="col-lg-3">
+					<img src="images/qrdSized.jpg">
+					<h4> QRD for Line Following</h4>
+					<p class="textCenter">Two QRD's placed the width of black tape apart to detect voltage difference due to contrast. The QRD's were very close to the ground, enclosed in a casing to reduce noisy signal. PID control was used to line follow.</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="images/casing.jpg">
+					<h4> Phototransistor for IR detection</h4>
+					<p class="textCenter">The phototransistor was securely held in a casing at an angle based on the position of the robot on the track relative to the frequency generator, to ensure maximum exposure to IR.</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="images/sonarSized.jpg">
+					<h4> Sonar for Edge Sensing</h4>
+					<p class="textCenter">Sonar's placed ahead of the robot ensured edge detection ahead of time and allowed to check for false edges by taking multiple readings and taking the average.</p>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="grey">
+		<div class="container">
+			<h2 id=software>Software</h2>
+
+			<div class="row betweenRowPadding">
+				<h3>Micro-controller</h3>
+				<div class="col-lg-6 betweenRowPadding">
+					<img src = "images/tinah.jpg">
+					<p class="textCenter">TINAH Micro-controller</p>
+				</div>
+				<div class="col-lg-6">
+					<p>
+						<div class="listFormat">
+							TINAH is an extension shield designed and built for the ENPH 253 course. The TINAH board connects to the Wiring Board, an open-source electronics IO board that is similar to Arduino boards.The TINAH board design was inspired by the Handyboard, a Motorola 6811-based microcontroller system designed for educational, hobbyist, and industrial robotics applications. Available features: <br><br>
+
+							<ul>
+								<li>Four DC motor outputs connected to on-board H-bridge drivers (9V, 1A/motor)</li>
+								<li>Three RC Servo motor outputs</li>
+								<li>Buffered digital and analog IO pins (for protecting the Wiring board)</li>
+								<li>Two buttons and two knobs for on-board control</li>
+								<li>T16×2 character LCD</li>
+								<li>Enable and direction pins for external motor control (5V logic)</li>
+							</ul>
+						</div>
+					</p>
+				</div>
+				
+
+			</div>
+
+			<div class="row betweenRowPadding">
+				<h3>Simplified State Machine</h3>
+				<div class="col-lg-1 col-md-0"></div>
+				<div class="col-lg-10 col-md-12">
+					<img src = "images/simplifiedstate.png">
+					<p class="textCenter">We used an event based state machine for the decision making process of our robot. The diagram above highlights the logic used during each state and the events that triggered a change in state.</p>
+				</div>
+				<div class="col-lg-1 col-md-0"></div>
+			</div>
+
+			<div class= row>
+				<div class="col-xs-3 col-lg-5"></div>
+					
+					<div class="col-xs-3 col-lg-1">
+					<a href="https://drive.google.com/file/d/1jAad1me1Wy2dngRwmkAd28E-rrx7Uh9Y/view?usp=sharing" target="_blank" ><img src="images/drive.png"></a>
+					<p class="smallText">Complete State Diagram</p>
+				</div>
+
+				<div class="col-xs-3 col-lg-1">
+					<a href="https://github.com/RobotTeam14/lysanderoth" target="_blank" ><img src="images/github.png"></a>
+					<p class="smallText">C++ Code</p>
+				</div>
+
+				<div class="col-xs-3 col-lg-5"></div>
+
+			</div>
+
 		</div>
 	</div>
 

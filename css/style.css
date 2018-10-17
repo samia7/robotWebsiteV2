@@ -1,3 +1,78 @@
+.jumbotron{
+    height: 800px; 
+    width: 100%;
+    padding: 0;
+ 
+    background: url("teamphoto1.jpg") no-repeat center center;
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    background-color: rgba(188, 184, 184, 0.25);
+    filter: contrast(100%);
+}
+@media screen and (max-width: 500px) {
+    .jumbotron{background-size:80% 40%;}
+}
+ 
+.jumbotron:hover .overlay{
+    opacity: 1;
+}
+ 
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    background-size: 100% 100%;
+    background-attachment:fixed;
+    background-color: rgba(100, 100, 100, 0.5);
+ 
+}
+ 
+.nameRow{
+    text-align:center;
+    margin:auto;
+    width:90%;
+}
+.nameRow ul{
+        margin:0 auto;
+        width: 90%;
+}
+ 
+.nameRow li{
+    right: 5%;
+    display: inline-block;
+    margin: 0 15px;
+    width:10%;
+    color: white;
+    font-family: 'raleway', 'Arial Header', sans-serif;  
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500;
+}
+ 
+ 
+.title{
+  width: 100%;
+  margin: auto;
+  padding-top: 350px;  
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'raleway', 'Arial Header', sans-serif;  
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-size: 87px;
+  font-weight: 500;
+ 
+ 
+}
 /*  SECTIONS  */
 body { padding-top: 50px; }
 
@@ -69,19 +144,25 @@ p{
 
 .textCenter {	
 	text-align: center;
+			font-family: Calibri, sans-serif;
+		color:		#707070;
+		
+		font-weight: 200;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 701px) {
  .textCenter {
-      font-size: 18px;
+      	font-size: 18px;
+line-height: 21px;
   }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 700px) {
   .textCenter {
-    	font-size: 16px;
+    	font-size: 15px;
+line-height: 19px;
   }
 }
 
@@ -168,4 +249,55 @@ line-height: 19px;
 
 .betweenRowPadding{
 	padding-top: 20px;
+}
+
+
+h4{
+		text-align: center;
+
+		font-family: Calibri, sans-serif;
+		color:		#606060;
+		
+		font-weight: 600;
+
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 701px) {
+ h4 {
+    	font-size: 20px;
+line-height: 21px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 700px) {
+  h4 {
+    	font-size: 18px;
+line-height: 18px;
+  }
+}
+
+.smallText {	
+	text-align: center;
+			font-family: Calibri, sans-serif;
+		color:		#707070;
+		
+		font-weight: 200;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 701px) {
+ .smallText {
+      	font-size: 12px;
+line-height: 14px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 700px) {
+  .smallText {
+    	font-size: 10px;
+line-height: 12px;
+  }
 }
